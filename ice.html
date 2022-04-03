@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore | ecommerce website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/383e31d048.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,200;0,300;0,500;1,600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="header">
+
+
+    <div class="container">
+
+
+
+    <div class="navbar">
+      <div class="logo">
+        <h1 class="log">Health<span>Care 420</span></h1>
+        <img src="images/tnw.png" width="125px" height="20px">
+
+      </div>
+
+       <nav class="nav">
+
+         <ul id="MenuItems">
+
+           <li><a class="a" href="index.html">Home</a></li>
+            <li><a class="a" href="shop/">Shop<i class="me fas fa-caret-down"></i>
+              <div class="dropdown_menu">
+             <ul>
+
+               <li><a href="#Flowers">Flowers<i class="me fas fa-caret-right"></i>
+
+                 <div class="dropdown_menu_1">
+                   <ul>
+                     <li><a href="Indica.html">Indica</a></li>
+                     <li><a href="Sativa.html">Sativa</a></li>
+                     <li><a href="Hybrid.html">Hybrid</a></li>
+                     <li><a href="Moonrock.html">Moonrock</a></li>
+                     <li><a href="Pre-Rolls.html">Pre-Rolls</a></li>
+                   </ul>
+                 </div>
+
+               </a></li>
+               <li><a href="concentrates.html">Concentrates</a></li>
+               <li><a href="vape-details.html">Vape Catridge</a></li>
+               <li><a href="Edibles.html">Edibles</a></li>
+               <li><a href="Hash.html">Hash</a></li>
+               <li><a href="psychedelics.html">psychedelics</a></li>
+             </ul>
+           </div>
+
+            </a></li>
+             <li><a class="a" href="about.html">About Us</a></li>
+              <li><a class="a" href="contact.html">Contact Us</a></li>
+               <li><a class="a"  href="account.html">My Account</a></li>
+              <li><a href="mycheckout/cart.html"><i class="fa fa-shopping-cart"> </i></a></li>
+
+
+               <img src="images/lady-img.jpg" width="30px" class="menu-icon"
+               onclick="menutoggle()">
+
+
+
+         </ul>
+       </nav>
+
+
+
+    </div>
+
+
+   </div>
+   </div>
+
+
+   <!----single product details----->
+
+   <div class="single-product">
+
+   <div class="small-container">
+     <div class="row">
+       <div class="col-2">
+         <img src="images/ii.jpeg" width="100%" id="ProductImg">
+
+         <div class="small-img-row">
+
+
+         </div>
+       </div>
+
+      <div class="col-2">
+        <p>Mushrooms / Indica / Ice Cream Cake</p>
+        <h2>Ice Cream Cake </h2> <br> $220.00-$2000.00 <br> <h3>Quantity in Demand</h3><br> <input type="number" value="1">
+
+       <form class="frm-pin" action="index.html" method="post">
+        <input type="hidden" name="mode" value="PinRequest"/>
+        <label class="w3-text-green"><b></b></label>
+         <select class="select" name="tot_pin_request" onchange="calculateAmount(this.value)" required>
+         <option value="" disable selected>choose your option</option>
+         <option value="1">ounce</option>
+          <option value="2">1/4 pound</option>
+        <option value="4">1/2 pound</option>
+        <option value="5">pound</option>
+        <option value="5">1/2 kg</option>
+        <option value="5">kg</option>
+
+
+        <hr>
+
+       </select>
+       <div class="pb">
+         <label>$</label>
+         <input class="w3-input w3-border" name="tot_amount"  id="tot-amount" type="text" readonly>
+
+         <hr>
+
+         <a href="mycheckout/cart.html" class="btn">Add To Cart</a>
+
+         <hr>
+
+         <h3>Product Details <i class="fa fa-indent"></i></h3>
+
+         <h5>
+           SKU:N/A <br> categories: indica,flowers, hydrid, ice cream <br> Tags: indica,
+         </h5>
+
+       </div>
+
+       </form>
+       </div>
+
+
+
+       </div>
+
+     </div>
+
+   </div>
+
+<hr>
+
+
+
+
+
+      <!---  description --->
+
+
+      <div class="description">
+         <p>Description   /   Additional Information    /  Review(0)</p>
+         <br>
+         <br>
+
+
+        <h4>Ice Cream Cake</h4>
+
+        <br>
+
+        <h4>
+          This indica cross between Wedding Cake and Gelato #33 is another popular strain.
+        More than 80 percent of consumers on Leafly report relaxing effects. Several reviewers
+        note this strain may initially cause a bit of a giggly euphoria that slowly transforms
+        into deep relaxation.
+        <br>
+        <br>
+
+        THC and CBD content:
+
+
+       <br>
+       <br>
+
+       THC: 20–25 percent
+
+       <br>
+       <br>
+
+      CBD: < 1 percent
+        </h4>
+
+        <br>
+        <br> 
+
+
+
+
+
+
+      </div>
+
+      <hr>
+
+
+ <!----feature products--->
+
+ <div class="popup">
+ <div class="contentBox">
+   <div class="close">
+     <svg
+   xmlns="http://www.w3.org/2000/svg"
+   class="h-6 w-6"
+   fill="none"
+   viewBox="0 0 24 24"
+   stroke="currentColor"
+   stroke-width="2"
+   >
+     <path
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     d="M6 18L18 6M6 6l12 12" />
+   </svg>
+   </div>
+   <div class="imgBx">
+     <img src="images/gift.jpeg" alt="">
+   </div>
+   <div class="content">
+     <h3>Special Offer</h3>
+     <h2>30<sup>%</sup><span>off</span> </h2>
+     <p>Buy and Get Your Discount Today</p>
+     <a href="coupon.html">Get the Deal</a>
+   </div>
+ </div>
+</div>
+
+<!---automatic show after 2s of page load-->
+
+<script>
+ const popup = document.querySelector(".popup");
+ const close = document.querySelector(".close");
+
+ window.onload = function(){
+   setTimeout(function(){
+     popup.style.display = "block";
+
+     //add some time delay to show popup
+   }, 2000)
+ }
+
+close.addEventListener("click", () => {
+  popup.style.display = "none";
+})
+
+
+</script>
+
+
+    <div class="small-container">
+
+      <h1>More Indica Products</h1>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/iiii.jpeg" alt="">
+          </a>
+          <h4>Bubba kush</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$250-2000</p>
+
+        </div>
+
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/v.jpeg" alt="">
+          </a>
+          <h4>GMO cookies</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$200-1800</p>
+
+        </div>
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/vape.jpeg" alt="">
+          </a>
+          <h4>GMO cookies</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$180 - 1500</p>
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/hope.jpeg" alt="">
+          </a>
+          <h4>Zkittlez</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$240</p>
+
+        </div>
+
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/kus.jpeg" alt="PE #6 MAGIC  MUSHROOMs">
+          </a>
+          <h4>Sluricane</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$250</p>
+
+        </div>
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/kush.jpeg" alt="Mazatapec magic MUSHROOMs">
+          </a>
+          <h4>Blue cheese</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$280</p>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/kush1.jpeg" alt="Texas Penis envy">
+          </a>
+          <h4>Do-si-do</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$220</p>
+
+        </div>
+
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/vv.jpeg" alt="Penis envy magic MUSHROOMs">
+          </a>
+          <h4>kush og</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$250</p>
+
+        </div>
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/pex.jpeg" alt="Cambodia magic MUSHROOMs">
+          </a>
+          <h4>Blue Cheese Xr</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$280</p>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <!---related products-->
+    <div class="small-container">
+
+      <h2>Related Products</h2>
+      <div class="row">
+
+
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/kpen.jpeg" alt="">
+          </a>
+
+          <h4>Exotic carts</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$30</p>
+
+        </div>
+
+        <div class="col-4">
+
+          <a href="cart.html">
+            <img src="images/kpen1.jpeg" alt="">
+          </a>
+          <h4>Frosty's snow</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$20</p>
+
+        </div>
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/kpen2.jpeg" alt="">
+          </a>
+
+          <h4>supreme</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+          <p class="p">$30 </p>
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+
+        <div class="col-4">
+
+          <a href="cart.html">
+            <img src="images/kpen3.jpeg" alt="">
+          </a>
+          <h4>Rose Gold</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+
+          <p class="p">$30</p>
+
+        </div>
+
+        <div class="col-4">
+          <a href="cart.html">
+              <img src="images/kpen4.jpeg" alt="">
+          </a>
+
+          <h4>legions/h4>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+
+            </div>
+
+
+          <p class="p">$25</p>
+
+        </div>
+        <div class="col-4">
+          <a href="cart.html">
+            <img src="images/kpen4.jpeg" alt="">
+          </a>
+
+          <h4>Legions</h4>
+          <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+
+          </div>
+
+
+          <p class="p">$30</p>
+
+        </div>
+
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+ </div>
+
+
+
+
+<!---footer---->
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+
+
+        <div class="app-logo">
+           <img src="images/back.jpeg" alt="">
+           <div class="container-fluid">
+            <a href="#"><i class="social-icon fab fa-facebook-f"></i></a>
+            <a href="#"><i class="social-icon fab fa-twitter"></i></a>
+            <a href="#"><i class="social-icon fab fa-instagram"></i></a>
+            <a href="#"><i class="social-icon fas fa-envelope"></i></a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="footer-col-2">
+
+        <h3>Get in touch with us for <br>best Quality Marijuana <br> Products</h3>
+
+        <p class="p"> The best online Cannabis Shop <br>to buy California weed and Related <br> Cannabis Products
+          </p>
+
+      </div>
+
+      <div class="footer-col-2">
+        <h3>Quick Links</h3>
+        <ul>
+
+          <li><a href="#Flowers">Flowers</a>
+
+               <ul>
+                 <li><a href="Indica.html">Indica</a></li>
+                 <li><a href="Sativa.html">Sativa</a></li>
+                 <li><a href="Hybrid.html">Hybrid</a></li>
+                 <li><a href="Moonrock.html">Moonrock</a></li>
+                 <li><a href="Pre-Rolls.html">Pre-Rolls</a></li>
+               </ul>
+
+
+          </li>
+          <li><a href="Concentrates.html">Concentrates</a></li>
+          <li><a href="Vape-Catridges.html">Vape Catridge</a></li>
+          <li><a href="Edibles.html">Edibles</a></li>
+          <li><a href="Hash.html">Hash</a></li>
+          <li><a href="psychedelics.html">psychedelics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Smoking weed <br> doesn't ruin your life, <br> that's all on you. If <br> you can't manage <br> smoking weed and <br> having a
+          successful <br> life, then you have <br> problem </h3>
+          <br>
+          <br>
+        <p>Stay Happy</p>
+
+
+      </div>
+
+
+    </div>
+
+   <hr>
+   <p class="copyright">©CopyRight 2013 GOLD MEDS</p>
+  </div>
+    <div>
+      <summary>Terms and Conditions Policy Privacy</summary>
+    </div>
+</div>
+
+<!---js toggle menu--->
+
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight= "0px";
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight= "200px";
+    }
+    {
+      MenuItems.style.maxHeight= "0px";
+    }
+  }
+
+</script>
+
+
+  <!---for products gallery--->
+
+
+<script>
+
+var ProductImg = document.getElementById("ProductImg");
+var SmallImg = document.getElementsByClassName("small-img");
+
+SmallImg[0].onclick = function()
+{
+ProductImg.src = SmallImg[0].src;
+}
+SmallImg[1].onclick = function()
+{
+ProductImg.src = SmallImg[1].src;
+}
+SmallImg[2].onclick = function()
+{
+ProductImg.src = SmallImg[2].src;
+}
+SmallImg[3].onclick = function()
+{
+ProductImg.src = SmallImg[3].src;
+}
+SmallImg[4].onclick = function()
+{
+ProductImg.src = SmallImg[4].src;
+}
+
+
+
+
+
+
+</script>
+
+<script>
+
+function calculateAmount(val){
+  var tot_price = val * 200;
+
+
+  var divobj= document.getElementById('tot-amount');
+  divobj.value= tot_price;
+
+}
+
+
+</script>
+
+
+
+  </body>
+</html>
